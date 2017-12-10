@@ -50,7 +50,7 @@ namespace com.ootii.Actors
         }
 
         /// <summary>
-        /// Determines the frame rate we're targeting for fixed updates. The
+        /// Determines the frame rate we're Targeting for fixed updates. The
         /// fixed update is important for smoothing out lerps or using physics.
         /// </summary>
         public float _FixedUpdateFPS = 60f;
@@ -76,7 +76,7 @@ namespace com.ootii.Actors
         }
 
         /// <summary>
-        /// Tracks the time for each frame that we're targeting
+        /// Tracks the time for each frame that we're Targeting
         /// </summary>
         protected float mFixedUpdateFrameTime = 1f / 60f;
 

@@ -44,7 +44,7 @@ namespace com.ootii.Actors.LifeCores
         bool UseRaycast { get; set; }
 
         /// <summary>
-        /// Area we can use for raycast targeting
+        /// Area we can use for raycast Targeting
         /// </summary>
         Collider RaycastCollider { get; set; }
 

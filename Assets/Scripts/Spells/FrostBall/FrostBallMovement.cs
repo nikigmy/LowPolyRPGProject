@@ -23,7 +23,7 @@ public class FrostBallMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player")
+        if (other.tag != "Player" && other.tag != "Spell")
         {
             Debug.Log(transform.position);
             var explosionParticle = Instantiate(ExplosionParticle, transform.position, Quaternion.identity);

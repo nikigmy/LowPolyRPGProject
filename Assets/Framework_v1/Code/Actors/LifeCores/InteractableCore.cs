@@ -99,7 +99,7 @@ namespace com.ootii.Actors.LifeCores
         }
 
         /// <summary>
-        /// Area we can use for raycast targeting
+        /// Area we can use for raycast Targeting
         /// </summary>
         public Collider _RaycastCollider = null;
         public Collider RaycastCollider
