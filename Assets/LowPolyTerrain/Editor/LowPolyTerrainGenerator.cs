@@ -1032,14 +1032,17 @@ public class LowPolyTerrainGenerator
 					g += mapColor.g * vertWeights[i];
 					b += mapColor.b * vertWeights[i];
 				}
+			    var xOffset = 12;
+			    var yOffset = 12;
                 try
                 {
-                    heightmap.Colors[y + 12, x + 12] = new Color(r, g, b, 1.0f);
+                    heightmap.Colors[y + yOffset, x + xOffset] = new Color(r, g, b, 1.0f);
                 }
                 catch (System.Exception)
                 { 
-                    var yoffset = (heightmap.originalVertPerSide - 1) - (y + 12);
-                    var xoffset = (heightmap.originalVertPerSide - 1) - (x + 12);
+                    continue;
+                    var yoffset = (heightmap.originalVertPerSide - 1) - (y + yOffset);
+                    var xoffset = (heightmap.originalVertPerSide - 1) - (x + xOffset);
                     
                     heightmap.Colors[Mathf.Abs(yoffset), Mathf.Abs(xoffset)] = new Color(r, g, b, 1.0f);
                 }
